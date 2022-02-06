@@ -47,8 +47,9 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:orientation="horizontal">
 
         <com.google.android.material.card.MaterialCardView
@@ -69,7 +70,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="194dp"
                     app:srcCompat="@drawable/media"
-                    android:scaleType="fitEnd"
+                    android:scaleType="fitXY"
                     android:contentDescription="@string/content_description_media"
                     />
 
@@ -142,7 +143,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="194dp"
                     app:srcCompat="@drawable/media1"
-                    android:scaleType="fitEnd"
+                    android:scaleType="fitXY"
                     android:contentDescription="@string/content_description_media"
                     />
 
