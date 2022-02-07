@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_1"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/second_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/bangla1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/bangla1"
+                android:textColor="#2B1875"
+                android:textSize="40sp"
+                app:layout_constraintStart_toStartOf="@id/second_parent"
+                app:layout_constraintEnd_toStartOf="@+id/cup"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintTop_toTopOf="@id/second_parent"
+                app:layout_constraintBottom_toBottomOf="@id/line">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/cup"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/cup"
+                app:layout_constraintBottom_toBottomOf="@id/bangla1"
+                app:layout_constraintEnd_toEndOf="@id/second_parent"
+                app:layout_constraintStart_toEndOf="@+id/bangla1"
+                app:layout_constraintTop_toTopOf="@id/bangla1">
+
+            </ImageView>
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                app:layout_constraintTop_toBottomOf="@id/bangla1"
+                app:layout_constraintBottom_toTopOf="@id/bangla2"
+                android:background="#CDD4E5"/>
+
+            <ImageView
+                android:id="@+id/pic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/pic"
+                app:layout_constraintBottom_toBottomOf="@id/line1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/line"
+                app:layout_constraintEnd_toStartOf="@id/bangla2">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/bangla2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/bangla2"
+                android:textColor="#4C5465"
+                android:textSize="19sp"
+                app:layout_constraintStart_toEndOf="@id/pic"
+                app:layout_constraintEnd_toEndOf="@id/bangla1"
+                app:layout_constraintTop_toTopOf="@id/line"
+                app:layout_constraintBottom_toBottomOf="@id/line1">
+
+            </TextView>
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                app:layout_constraintTop_toBottomOf="@id/line"
+                app:layout_constraintBottom_toBottomOf="@id/second_parent"
+                android:background="#CDD4E5"/>
+
+            <TextView
+                android:id="@+id/bangla3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/bangla3"
+                android:textColor="#262D3E"
+                android:textSize="12sp"
+
+
+                app:layout_constraintEnd_toEndOf="@id/second_parent"
+                app:layout_constraintTop_toBottomOf="@id/line"
+                app:layout_constraintBottom_toTopOf="@id/number1">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/number1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/number1"
+                android:textColor="#D1409F"
+                android:textSize="22sp"
+
+                app:layout_constraintEnd_toEndOf="@id/second_parent"
+                app:layout_constraintTop_toBottomOf="@id/bangla3"
+                app:layout_constraintBottom_toBottomOf="@id/line1">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/bangla4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/bangla4"
+                android:textColor="#262D3E"
+                android:textSize="12sp"
+
+
+                app:layout_constraintStart_toStartOf="@id/pic"
+                app:layout_constraintTop_toBottomOf="@id/line1"
+                app:layout_constraintBottom_toTopOf="@id/number2">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/number2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/number2"
+                android:textColor="#D1409F"
+                android:textSize="18sp"
+
+
+                app:layout_constraintStart_toStartOf="@id/bangla4"
+                app:layout_constraintEnd_toEndOf="@id/bangla4"
+                app:layout_constraintTop_toBottomOf="@id/bangla4"
+                app:layout_constraintBottom_toBottomOf="@id/second_parent">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/bangla5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/bangla5"
+                android:textColor="#262D3E"
+                android:textSize="12sp"
+
+
+                app:layout_constraintStart_toEndOf="@id/bangla4"
+                app:layout_constraintEnd_toStartOf="@id/bangla6"
+                app:layout_constraintTop_toBottomOf="@id/line1"
+                app:layout_constraintBottom_toTopOf="@id/number3">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/number3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/number3"
+                android:textColor="#D1409F"
+                android:textSize="18sp"
+
+
+                app:layout_constraintStart_toStartOf="@id/bangla5"
+                app:layout_constraintEnd_toEndOf="@id/bangla5"
+                app:layout_constraintTop_toBottomOf="@id/bangla5"
+                app:layout_constraintBottom_toBottomOf="@id/second_parent">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/bangla6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/bangla6"
+                android:textColor="#262D3E"
+                android:textSize="12sp"
+
+
+                app:layout_constraintTop_toBottomOf="@id/line1"
+                app:layout_constraintBottom_toTopOf="@id/number4"
+                app:layout_constraintEnd_toEndOf="@id/number1">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/number4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/number4"
+                android:textColor="#D1409F"
+                android:textSize="18sp"
+
+
+                app:layout_constraintStart_toStartOf="@id/bangla6"
+                app:layout_constraintEnd_toEndOf="@id/bangla6"
+                app:layout_constraintTop_toBottomOf="@id/bangla6"
+                app:layout_constraintBottom_toBottomOf="@id/second_parent">
+
+            </TextView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/card"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

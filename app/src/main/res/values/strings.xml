@@ -10,4 +10,14 @@
     <string name="secondary_text1">Nishimiya</string>
     <string name="supporting_text">A character from - A Silent Voice</string>
     <string name="click">Click Here</string>
+    <string name="bangla1">লিডার বোর্ড</string>
+    <string name="bangla2">শহিদুল ইসলাম শিশির</string>
+    <string name="bangla3">মোট পয়েন্ট</string>
+    <string name="number1">২০০০</string>
+    <string name="bangla4">অবস্থান</string>
+    <string name="number2">৫ম</string>
+    <string name="bangla5">স্কোরিং দিন</string>
+    <string name="number3">৫ম দিন</string>
+    <string name="bangla6">স্কোরিং সময়</string>
+    <string name="number4">১০:৪৫:৩০</string>
 </resources>
