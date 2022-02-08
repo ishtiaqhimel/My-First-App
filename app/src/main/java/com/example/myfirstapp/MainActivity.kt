@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
     }
 
-    fun getUserList() : List<User> {
+    fun getUserList(): List<User> {
         val userList = mutableListOf<User>()
         userList.add(User("Ishtiaq", "01858795079"))
         userList.add(User("Mehedi", "01845795633"))
