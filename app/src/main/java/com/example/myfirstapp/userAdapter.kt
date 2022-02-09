@@ -4,13 +4,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myfirstapp.model.Post
 import com.google.android.material.textview.MaterialTextView
 
-class userAdapter(val userList: List<User>) : RecyclerView.Adapter<userAdapter.viewHolder>() {
+class userAdapter(val userList: List<Post>) : RecyclerView.Adapter<userAdapter.viewHolder>() {
 
     class viewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val name: MaterialTextView = view.findViewById(R.id.tvName)
-        val number: MaterialTextView = view.findViewById(R.id.tvNumber)
+        val useId: MaterialTextView = view.findViewById(R.id.tvuserId)
+        val id: MaterialTextView = view.findViewById(R.id.tvid)
+        val title: MaterialTextView = view.findViewById(R.id.tvtitle)
+        val body: MaterialTextView = view.findViewById(R.id.tvbody)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): viewHolder {
@@ -21,8 +24,10 @@ class userAdapter(val userList: List<User>) : RecyclerView.Adapter<userAdapter.v
 
     override fun onBindViewHolder(holder: viewHolder, position: Int) {
         val currentData = userList[position]
-        holder.name.text = currentData.userName
-        holder.number.text = currentData.number
+        holder.useId.text = currentData.userId.toString()
+        holder.id.text = currentData.userId.toString()
+        holder.title.text = currentData.title
+        holder.body.text = currentData.body
     }
 
     override fun getItemCount(): Int {
